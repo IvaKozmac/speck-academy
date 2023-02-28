@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/*CONTAINER*/
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    padding: 50px 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*TITLE*/
+
+.myTechnologies {
+    font-family: Arial Black, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+/*CONTAINER ITEMS*/
+.containerItems{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/*INPUT+ADD*/
+
+.inputContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 700px;
+
+    align-items: center;
+}
+
+/*INPUT*/
+
+#innerTextInput{
+    border-radius: 5px;
+    height: 35px;
+    width: 100%;
+    max-width: 350px;
+    margin-right: 20px;
+    padding: 0 10px
+}
+
+#innerTextInput:focus {
+    border-color: #FF6E6E !important;
+    outline: none;
+}
+
+/*BUTTON ADD*/
+
+#buttonAdd{
+    border-color: #FF6E6E;
+    transition-duration: 0.5s;
+    background-color: #FFE8E8;
+    border-radius: 5px;
+    height: 35px;
+    width: 85px;
+    font-family: arial Black;
+    color: #B00101;
+    cursor: pointer;
+}
+
+#buttonAdd:hover {
+    background-color: #B00101;
+    color: white;
+}
+
+/*REMOVE TEXT*/
+
+#removeText{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: #D11D1D;
+    width: 150px;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    float: right;
+}
+
+/*TECHNOLOGY INPUT-ADD*/
+
+.containerTechnology{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px
+}
+
+.technology{
+    width: 48%;
+    padding: 10px 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #838383;
+}
+
+.inputTechnology{
+    font-size: 20px;
+    font-family: arial black;   
+    text-align: center;
+}
+
+/*RESPONZIVNOST*/
+
+@media screen and (max-width: 900px){
+.container{
+    padding: 40px 10px;
+}
+
+.myTechnologies{
+    font-size: 30px;
+}
+
+#innerTextInput{
+    width: 80%;
+}
+
+.technology{
+    width: 100%;
+}
+
+#removeText{
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+} 
